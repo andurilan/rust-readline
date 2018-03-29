@@ -7,3 +7,8 @@ fn main() {
 fn main() {
     println!("cargo:rustc-flags=-l readline");
 }
+
+#[cfg(target_os = "windows")]
+fn main() {
+    println!("cargo:rustc-flags=-l readline");
+}
